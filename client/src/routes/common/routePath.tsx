@@ -1,7 +1,3 @@
-export const isAuthRoute = (pathname: string): boolean => {
-  return Object.values(AUTH_ROUTES).includes(pathname);
-};
-
 export const AUTH_ROUTES = {
   LANDING: "/",
   SIGN_IN: "/auth/sign-in",
@@ -14,4 +10,8 @@ export const PROTECTED_ROUTES = {
   FILES: "/files",
   DOCS: "/docs",
   SETTINGS: "/settings",
+};
+
+export const isAuthRoute = (pathname: string): boolean => {
+  return Object.values(AUTH_ROUTES).includes(pathname);
 };
