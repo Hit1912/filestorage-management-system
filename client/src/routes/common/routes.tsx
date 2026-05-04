@@ -7,7 +7,10 @@ import Overview from "@/pages/overview";
 import Settings from "@/pages/settings";
 import Docs from "@/pages/docs";
 
+import Landing from "@/pages/landing";
+
 export const authenticationRoutePaths = [
+  { path: AUTH_ROUTES.LANDING, element: <Landing /> },
   { path: AUTH_ROUTES.SIGN_IN, element: <SignIn /> },
   { path: AUTH_ROUTES.SIGN_UP, element: <SignUp /> },
 ];

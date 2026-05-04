@@ -19,6 +19,7 @@ import { toast } from "sonner";
 import { useAppDispatch } from "@/app/hook";
 import { setCredentials } from "@/features/auth/authSlice";
 import { Loader, Github } from "lucide-react";
+import confetti from "canvas-confetti";
 
 const schema = z.object({
   email: z.string().email("Invalid email address"),
@@ -49,6 +50,12 @@ const SignInForm = ({
       .then((data) => {
         dispatch(setCredentials(data));
         toast.success("Login successful");
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ["#3b82f6", "#60a5fa", "#ffffff"]
+        });
         setTimeout(() => {
           navigate(PROTECTED_ROUTES.OVERVIEW);
         }, 1000);

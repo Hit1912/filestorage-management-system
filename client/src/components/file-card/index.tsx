@@ -20,7 +20,7 @@ interface FileCardProps {
 }
 
 // Map file types to Lucide React icons
-const fileTypeIcons: { [key: string]: React.ElementType } = {
+const fileTypeIcons: Record<string, any> = {
   PDF: FilePdf,
   DOCX: FileText,
   TXT: FileText,

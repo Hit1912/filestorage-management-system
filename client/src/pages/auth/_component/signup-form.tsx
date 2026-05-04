@@ -16,6 +16,7 @@ import {
 import { toast } from "sonner";
 import { useRegisterMutation } from "@/features/auth/authAPI";
 import { Loader, Github } from "lucide-react";
+import confetti from "canvas-confetti";
 
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -44,7 +45,15 @@ const SignUpForm = () => {
       .then(() => {
         form.reset();
         toast.success("Sign up successful");
-        navigate(AUTH_ROUTES.SIGN_IN);
+        confetti({
+          particleCount: 150,
+          spread: 100,
+          origin: { y: 0.6 },
+          colors: ["#3b82f6", "#10b981", "#ffffff"]
+        });
+        setTimeout(() => {
+          navigate(AUTH_ROUTES.SIGN_IN);
+        }, 1500);
       })
       .catch((error) => {
         console.log(error);

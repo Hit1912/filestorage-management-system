@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type React from "react";
+
 import { format } from "date-fns";
 import { ColumnDef } from "@tanstack/react-table";
 import { getCleanAssetType } from "@/lib/format-utils";
@@ -15,7 +15,7 @@ import {
 import { IMAGE_EXTENSIONS } from "@/constant";
 
 // Icons for different file types
-const fileTypeIcons: { [key: string]: React.ElementType } = {
+const fileTypeIcons: Record<string, any> = {
   PDF: FilePdf,
   DOCX: FileText,
   TXT: FileText,
