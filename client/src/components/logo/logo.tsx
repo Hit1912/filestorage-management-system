@@ -1,6 +1,8 @@
 import { PROTECTED_ROUTES } from "@/routes/common/routePath";
 import { Link } from "react-router-dom";
 
+import logoImg from "@/assets/logo.png";
+
 const Logo = (props: { url?: string }) => {
   return (
     <Link
@@ -8,7 +10,7 @@ const Logo = (props: { url?: string }) => {
       className="flex items-center gap-2"
     >
       <div className="flex items-center gap-2">
-        <img src="/src/assets/logo.png" alt="DHR Nest Logo" className="w-10 h-10 object-contain" />
+        <img src={logoImg} alt="DHR Nest Logo" className="w-10 h-10 object-contain" />
         <h1 className="relative flex select-none flex-row items-baseline font-bold text-2xl lg:text-3xl">
           <span className="sr-only">DHR Nest</span>
           <span className="tracking-tight cursor-pointer">
