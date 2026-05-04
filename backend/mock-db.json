@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "_id": "8396883f-4438-4bee-bfd4-eb3a6085560e",
+      "name": "Hit",
+      "email": "hitdungrani29@gmail.com",
+      "password": "$2b$10$w/9qdBJpI0bi0oEG0iX.fO3P4KFJXUCvKnG7txBdvpfkfTZvrvYmO",
+      "createdAt": "2026-04-25T11:45:01.184Z",
+      "updatedAt": "2026-04-25T12:02:13.280Z"
+    },
+    {
+      "_id": "725f138d-0383-4b14-a48d-a80819144db5",
+      "name": "hitdungrani9",
+      "email": "hitdungrani9@gmail.com",
+      "password": "$2b$10$HAazd.46GwFYmzNXsYdqR.N/fqobItvSzF8gR.92v65NebZXG.qRe",
+      "createdAt": "2026-04-25T11:54:57.226Z",
+      "updatedAt": "2026-04-25T11:54:57.226Z"
+    },
+    {
+      "_id": "40364ae9-b448-49d3-ba33-aa784d08cbff",
+      "name": "Updated NamePremium User",
+      "email": "test@example.com",
+      "password": "$2b$10$PNI4c9O7BXvBOt9RqvnyzuHzRaiodi5av4Pbbok1dblG1ESiwmM92",
+      "createdAt": "2026-04-25T11:58:11.823Z",
+      "updatedAt": "2026-04-25T12:07:26.911Z"
+    }
+  ],
+  "files": [
+    {
+      "_id": "160031a2-3cc2-45bc-bb3c-003cabea2187",
+      "userId": "8396883f-4438-4bee-bfd4-eb3a6085560e",
+      "storageKey": "mock/8396883f-4438-4bee-bfd4-eb3a6085560e/160031a2-3cc2-45bc-bb3c-003cabea2187-Resume (Hit).pdf",
+      "originalName": "Resume (Hit).pdf",
+      "uploadVia": "WEB",
+      "size": 528332,
+      "ext": "pdf",
+      "url": "",
+      "mimeType": "application/pdf",
+      "createdAt": "2026-04-25T11:45:33.807Z",
+      "updatedAt": "2026-04-25T11:45:33.807Z"
+    }
+  ],
+  "storage": [
+    {
+      "userId": "8396883f-4438-4bee-bfd4-eb3a6085560e",
+      "totalSize": 528332
+    },
+    {
+      "userId": "725f138d-0383-4b14-a48d-a80819144db5",
+      "totalSize": 0
+    },
+    {
+      "userId": "40364ae9-b448-49d3-ba33-aa784d08cbff",
+      "totalSize": 0
+    }
+  ],
+  "apikeys": []
+}
