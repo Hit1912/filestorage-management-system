@@ -329,9 +329,12 @@ const Landing = () => {
                Join thousands of developers and teams who trust DHR Nest for their most important data.
              </p>
              <Link to={AUTH_ROUTES.SIGN_UP} className="w-full sm:w-auto">
-               <Button className="w-full sm:w-auto h-14 md:h-18 px-8 md:px-14 text-lg md:text-2xl bg-white text-orange-600 hover:bg-neutral-100 rounded-2xl font-black shadow-2xl transition-all hover:scale-105 border-none !opacity-100">
-                 Get Started Now — It's Free
-               </Button>
+                <button 
+                  style={{ color: '#ea580c', backgroundColor: 'white' }}
+                  className="w-full sm:w-auto h-16 md:h-20 px-10 md:px-16 text-xl md:text-3xl rounded-2xl font-black shadow-2xl transition-all hover:scale-105 cursor-pointer border-none flex items-center justify-center mx-auto"
+                >
+                  Start Storing For Free
+                </button>
              </Link>
            </div>
         </div>
