@@ -138,7 +138,7 @@ const Landing = () => {
 
           <motion.h1 
             variants={itemVariants}
-            className="text-6xl md:text-8xl font-bold tracking-tight mb-8 bg-gradient-to-b from-white via-white to-white/40 bg-clip-text text-transparent leading-[1.1]"
+            className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tight mb-8 bg-gradient-to-b from-white via-white to-white/40 bg-clip-text text-transparent leading-[1.1] break-words px-4"
           >
             Store your files <br />
             <span className="text-primary">beyond the clouds.</span>
@@ -318,16 +318,18 @@ const Landing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative z-10 py-32 px-6 md:px-12 max-w-7xl mx-auto">
-        <div className="relative rounded-[3rem] bg-gradient-to-br from-primary to-orange-900 p-16 md:p-24 overflow-hidden text-center">
+      <section className="relative z-10 py-20 px-4 md:px-12 max-w-7xl mx-auto">
+        <div className="relative rounded-[2rem] md:rounded-[3rem] bg-gradient-to-br from-primary to-orange-950 p-8 md:p-24 overflow-hidden text-center shadow-2xl">
            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10" />
-           <div className="relative z-10">
-             <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to secure your digital assets?</h2>
-             <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-2xl mx-auto font-medium">
+           <div className="relative z-10 flex flex-col items-center">
+             <h2 className="text-3xl md:text-6xl font-bold mb-6 md:mb-10 text-white leading-tight max-w-4xl">
+               Ready to secure your digital assets?
+             </h2>
+             <p className="text-lg md:text-2xl text-white/90 mb-8 md:mb-14 max-w-2xl mx-auto font-medium leading-relaxed">
                Join thousands of developers and teams who trust DHR Nest for their most important data.
              </p>
-             <Link to={AUTH_ROUTES.SIGN_UP}>
-               <Button className="h-16 px-12 text-xl bg-white text-primary hover:bg-neutral-100 rounded-2xl font-bold shadow-2xl transition-all hover:scale-105 border-none">
+             <Link to={AUTH_ROUTES.SIGN_UP} className="w-full sm:w-auto">
+               <Button className="w-full sm:w-auto h-14 md:h-18 px-8 md:px-14 text-lg md:text-2xl bg-white text-orange-600 hover:bg-neutral-100 rounded-2xl font-black shadow-2xl transition-all hover:scale-105 border-none !opacity-100">
                  Get Started Now — It's Free
                </Button>
              </Link>

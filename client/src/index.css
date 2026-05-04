@@ -3,7 +3,7 @@
 
 body {
   pointer-events: fill !important;
-  font-family: "Onest", sans-serif !important;
+  font-family: "Outfit", sans-serif !important;
 }
 
 @custom-variant dark (&:is(.dark *));
